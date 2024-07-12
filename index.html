@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego de Adivinar Número</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f0f0f0;
+    }
+    .container {
+      margin-top: 50px;
+    }
+    .card {
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+    .card-header {
+      background-color: #5496ee;
+      color: #fff;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    .form-control {
+      border-radius: 5px;
+    }
+    .btn {
+      border-radius: 5px;
+    }
+    .btn-primary {
+      background-color: #5496ee;
+      border-color: #5496ee;
+    }
+    .btn-danger {
+      background-color: #f44336;
+      border-color: #f44336;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-header">
+            <h4 class="mb-0">Juego de Adivinar Número</h4>
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <label for="intentos">Número de intentos:</label>
+              <input type="number" class="form-control" id="intentos" min="1" max="10" value="5">
+            </div>
+            <div class="form-group">
+              <label for="numero-adivinar">Número a adivinar:</label>
+              <input type="number" class="form-control" id="numero-adivinar" min="1" max="50">
+            </div>
+            <div class="form-group">
+              <button class="btn btn-primary" id="enviar">Enviar</button>
+              <button class="btn btn-danger" id="reiniciar">Reiniciar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-4">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Resultados</h5>
+            <p class="card-text" id="resultado">Intento #: <span id="intento-actual">0</span> de <span id="intentos-restantes">0</span></p>
+            <div id="imagen-resultado" class="text-center"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+  
+  </script>
+</body>
+</html>
